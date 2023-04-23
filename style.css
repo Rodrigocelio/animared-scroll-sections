@@ -1,54 +1,57 @@
+/* Importa as fontes Bebas Neue e Cormorant Garamond do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
 
-$bg-gradient: linear-gradient(
-  180deg,
-  rgba(0, 0, 0, 0.6) 0%,
-  rgba(0, 0, 0, 0.3) 100%
-);
+/* Define um gradiente de fundo para ser usado nas imagens de fundo */
 
+
+/* Define o estilo padrão para todos os elementos */
 * {
-  box-sizing: border-box;
-  user-select: none;
+  box-sizing: border-box; /* Torna as bordas parte do tamanho do elemento */
+  user-select: none; /* Não permite que o usuário selecione texto */
 }
 
+/* Define o estilo para todos os links */
 a {
-  color: #fff;
-  text-decoration: none;
+  color: #fff; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
 }
 
+/* Define o estilo para o corpo da página */
 body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  color: white;
-  background: black;
-  font-family: "Cormorant Garamond", serif;
-  text-transform: uppercase;
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  height: 100vh; /* Define a altura da página como 100% da altura da janela do navegador */
+  color: white; /* Cor do texto */
+  background: black; /* Cor de fundo */
+  font-family: "Cormorant Garamond", serif; /* Define a fonte */
+  text-transform: uppercase; /* Converte todo o texto para maiúsculo */
 }
 
+/* Define o estilo para títulos de segundo nível */
 h2 {
-  font-size: clamp(1rem, 5vw, 5rem);
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 0.5em;
-  margin-right: -0.5em;
-  color: hsl(0, 0, 80%);
-  width: 90vw;
-  max-width: 1200px;
+  font-size: clamp(1rem, 5vw, 5rem); /* Define o tamanho da fonte com uma fórmula responsiva */
+  font-weight: 400; /* Define a espessura da fonte */
+  text-align: center; /* Alinha o texto ao centro */
+  letter-spacing: 0.5em; /* Espaçamento entre letras */
+  margin-right: -0.5em; /* Corrige o alinhamento do texto */
+  color: hsl(0, 0, 80%); /* Cor do texto */
+  width: 90vw; /* Define a largura máxima do título */
+  max-width: 1200px; /* Define a largura máxima do título */
 }
 
+/* Define o estilo para o cabeçalho da página */
 header {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5%;
-  width: 100%;
-  z-index: 3;
-  height: 7em;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: clamp(0.66rem, 2vw, 1rem);
+  position: fixed; /* Mantém o cabeçalho sempre visível */
+  display: flex; /* Usa um layout flexível */
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: space-between; /* Distribui os itens horizontalmente */
+  padding: 0 5%; /* Espaçamento interno */
+  width: 100%; /* Largura total */
+  z-index: 3; /* Define a camada da sobreposição */
+  height: 7em; /* Altura do cabeçalho */
+  font-family: "Bebas Neue", sans-serif; /* Define a fonte */
+  font-size: clamp(0.66rem, 2vw, 1rem); /* Define o tamanho da fonte com uma fórmula responsiva */
   letter-spacing: 0.5em;
 }
 
@@ -89,8 +92,7 @@ section {
 
 .first {
   .bg {
-    background-image: $bg-gradient,
-      url("https://planejadorweb.com.br/wp-content/uploads/2021/05/O-que-e-UX-design.jpg");
+    background-image: src="img/section.jpg";
   }
 }
 
